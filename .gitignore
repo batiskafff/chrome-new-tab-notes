@@ -7,6 +7,9 @@ yarn-error.log*
 
 build
 
+build.crx
+build.pem
+
 # Runtime data
 pids
 *.pid

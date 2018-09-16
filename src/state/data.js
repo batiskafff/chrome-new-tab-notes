@@ -3,7 +3,7 @@ import createState from 'react-copy-write'
 import styled from 'styled-components';
 
 
-export const localStorageId = 'meow';
+export const localStorageId = 'meow1';
 
 let initialState;
 
