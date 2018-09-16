@@ -1,9 +1,17 @@
 {
   "manifest_version": 2,
-  "name": "Name of aklsdkjlfasdkjlasdfjklafdsjkl extension",
-  "version": "1.0",
- "description": "A short description of your extension which will appear in the Chrome web store.",
-   "chrome_url_overrides" : {
-     "newtab": "index.html"
-   }
+
+  "name": "Note Tab",
+  "short_name": "Note Tab",
+  "version": "1.1",
+  "description": "Chrome Note Tab: simple note storage.",
+
+  "permissions": [
+      "contextMenus",
+      "tabs"
+  ],
+  "chrome_url_overrides": {
+      "newtab": "index.html"
+  },
+  "offline_enabled": true
 }

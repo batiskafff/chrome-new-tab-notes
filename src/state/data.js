@@ -8,7 +8,17 @@ export const localStorageId = 'meow';
 let initialState;
 
 try {
-    initialState = JSON.parse(window.localStorage.getItem(localStorageId))
+    let stored = window.localStorage.getItem(localStorageId);
+    if (stored) {
+        initialState = JSON.parse(stored);
+    } else {
+        initialState = JSON.parse(`{
+            "pages":{},
+            "sideBarOrder": ["default-page"],
+            "selectedIndex": 0
+        }`);
+    }
+    
 } catch(e) {
     initialState = JSON.parse(`{
         "pages":{},
